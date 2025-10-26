@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f6fa;
+  margin: 0;
+  padding: 0;
+  color: #2f3640;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.markdown {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea.input {
+  width: 50%;
+  padding: 1rem;
+  border: none;
+  border-right: 1px solid #dcdde1;
+  font-size: 1rem;
+  resize: none;
+  outline: none;
+  height: 500px;
+}
+
+.result {
+  width: 50%;
+  padding: 1rem;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  height: 80vh;
+}
+
+.result h1, .result h2, .result h3 {
+  border-bottom: 1px solid #dcdde1;
+  padding-bottom: 0.3rem;
 }
